@@ -1,0 +1,78 @@
+/* cores de fundo */
+.fundo-amarelo{
+    background-color: #F1BF77;
+ }
+ 
+ .fundo-vermelho{
+    background-color: #D76D57;
+ }
+ 
+ .fundo-verde{
+    background-color: #7C875C;
+ }
+ 
+ .fundo-bege{
+    background-color: #D4A080;
+ }
+ 
+ .fundo-amarelo-nota-fiscal{
+    background-color: #FDFCD2;
+ }
+ 
+ .fundo-amarelo-claro{
+    background-color: #E9CE8B;
+ }
+ 
+ .fundo-cinza-escuro{
+    background-color: #737373;
+ }
+ 
+ .fundo-cinza-claro{
+    background-color: #D9D9D9;
+ }
+ 
+ .fundo-cinza{
+    background-color: #A6A6A6;
+ }
+ 
+ /* cores de texto */
+ .cor-amarelo{
+    color: #F1BF77;
+ }
+ 
+ .cor-vermelho{
+    color: #D76D57;
+ }
+ 
+ .cor-verde{
+    color: #7C875C;
+ }
+ 
+ .cor-bege{
+    color: #D4A080;
+ }
+ 
+ .cor-amarelo-nota-fiscal{
+    color: #FDFCD2;
+ }
+ 
+ .cor-amarelo-claro{
+    color: #E9CE8B;
+ }
+ 
+ .cor-cinza-escuro{
+    color: #737373;
+ }
+ 
+ .cor-cinza-claro{
+    color: #D9D9D9;
+ }
+ 
+ .cor-cinza{
+    color: #A6A6A6;
+ }
+
+ .cor-preto{
+   color: #000000;
+}
+ 

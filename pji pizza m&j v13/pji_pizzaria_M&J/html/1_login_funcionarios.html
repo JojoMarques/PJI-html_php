@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M & J's Pizzaria</title>
+
+        <link rel="shortcut icon" href="../assets/images/logo/pizza_logo_icon.png" type="image/png">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/fontes.css">
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <header class="header-sem-botao fundo-amarelo"> <!--header da pag-->
+            <a href="../html/index.html" class="img-logo"> <!--fundo branco da imagem-->
+                <img class="logo efeito-de-botao-zoom-05" alt="logo da pizzaria M&J's" src="../assets/images/logo/pizza_logo.png"> <!--imagem-->
+            </a>
+            
+            <p id="titulo-header" class="Nickainley">Login de funcionários</p> <!--texto do nome da pizzaria-->
+            
+            <div class="line"></div> <!--linha decorativa-->
+        </header>
+        
+        <article class="content h-75"> <!--conteudo-->
+            <div class="row align-content-center h-100 w-100"> <!--como se fosse uma linha onde cada elemento tem sua propria coluna-->
+               <!--barrinha decorativa-->
+                <div class="col-1 align-items-center h-100">
+                    <div class="barrinha-decorativa fundo-amarelo"></div>
+                </div> 
+
+                <!--form-->
+                <form id="formLoginFunc" action="" method="post" class="col-11 h-100">
+                    <div class="row h-100">
+                        <!--input-->
+                        <div class="col-8 h-100">
+                            <div class="row input-text">
+                                <label for="nome_func" class="col-2 label Courgette">Nome: </label>
+                                <input id="input_nome_func" class="col-10 input fundo-bege efeito-de-input-zoom-05" type="text" name="nome_func" maxlength="255" required placeholder="insira o nome do funcionário">
+                                
+                                <div class="col-5 justify-content-start texto-aviso d-none" id="nome-texto-aviso-contain">
+                                    <p class="texto-aviso-p" id="nome-texto-aviso">Vazio!! Insira um nome!</p>
+                                </div>
+                            </div>
+
+                            <div class="row input-text">
+                                <label for="codigo_func" class="col-2 label Courgette">Código: </label>
+                                <input id="input_cod_func" class="col-10 input fundo-bege efeito-de-input-zoom-05" type="password" name="codigo_func" maxlength="9" required placeholder="insira o código de funcionário">
+                                
+                                <div class="col-5 justify-content-start texto-aviso d-none" id="cod-texto-aviso-contain">
+                                    <p class="texto-aviso-p " id="cod-texto-aviso">Vazio!! Insira um código!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--botao confirmar-->
+                        <div class="col-3 posicao-botao-confirmar h-100">
+                            <button type="button" id="submitFunc" class="botao-DecoCheck fundo-verde Courgette efeito-de-botao-zoom-05" style="width: 55%; height: 10%; border: #7C875C 9px solid;">
+                                Confirmar
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </article>
+
+        <footer class="foot fundo-bege"> <!--rodape-->
+            <i class="texto-pequeno">M & J's Pizzaria &copy; <br> developed by M & J's Dev&reg; <br>ifsp - 2023</i>
+        </footer>
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+        <script src="../js/app2.js"></script>
+
+    </body>
+</html>
