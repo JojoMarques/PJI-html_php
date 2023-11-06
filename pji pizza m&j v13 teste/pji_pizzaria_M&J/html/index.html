@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M & J's Pizzaria</title>
+
+        <link rel="shortcut icon" href="../assets/images/logo/pizza_logo_icon.png" type="image/png">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/fontes.css">
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <header class="header fundo-vermelho"> <!--header da pag-->
+            <div class="img-logo"> <!--fundo branco da imagem-->
+                <img class="logo" alt="logo da pizzaria M&J's" src="../assets/images/logo/pizza_logo.png"> <!--imagem-->
+            </div>
+            
+            <p id="titulo-header" class="PlaylistFF">- M & J's Pizzaria -</p> <!--texto do nome da pizzaria-->
+            
+            <a id="botao_entrar" href="1_login_funcionarios.html" class="align-self-center efeito-de-botao-zoom-1 botao-retangular fundo-amarelo-claro Courgette">Entrar</a> <!--botao entrar-->
+            
+            <div class="line"></div> <!--linha decorativa-->
+        </header>
+        
+        <article class="content h-75"> <!--conteudo-->
+            <div class="row align-content-center h-100 w-100"> <!--como se fosse uma linha onde cada elemento tem sua propria coluna-->
+                <!--barrinha decorativa-->
+                <div class="col-1 align-items-center h-100">
+                    <div class="barrinha-decorativa fundo-vermelho"></div>
+                </div> 
+
+                <div class="col-8 h-100"> <!--quadro de imagens de pizza-->
+                        <!--imagens-->
+                    <div id="carousel_pizzas" class="d-flex moldura-pizzas fundo-bege carousel slide pizzas" data-ride="carousel">
+
+                        <div class="carousel-inner pizzas h-100 ">
+                            <div class="carousel-item w-100 h-100 active">
+                                <img class="img-pizza d-block w-100 h-100" src="../assets/images/pizzas/pizza-calabresa.jpg" alt="pizza de calabresa">
+                            </div>
+
+                            <div class="carousel-item w-100 h-100 ">
+                                <img class="img-pizza d-block w-100 h-100" src="../assets/images/pizzas/Pizza_frango_requeijao.jpg" alt="pizza de frango com requeijão">
+                                
+                            </div>
+
+                            <div class="carousel-item w-100 h-100 ">
+                                <img class="img-pizza d-block w-100 h-100" src="../assets/images/pizzas/pizza-bufala.jpg" alt="pizza de queijo de bufala">
+                            </div>
+
+                            <div class="carousel-item w-100 h-100 ">
+                                <img class="img-pizza d-block w-100 h-100" src="../assets/images/pizzas/Pizza-de-atum.jpg" alt="pizza de atum">
+                            </div>
+
+                            <div class="carousel-item w-100 h-100 ">
+                               <img class="img-pizza d-block w-100 h-100" src="../assets/images/pizzas/pizza-queijo.jpg" alt="pizza de queijo">
+                            </div>
+                        </div>
+
+                        <!--botao setinha esquerda-->
+                        <button id="seta_left" class="carousel-control-prev botao-triangular-pequeno efeito-de-botao-zoom-15" type="button" data-bs-target="#carousel_pizzas" data-bs-slide="prev">
+                            <img class="pequena-seta" src="../assets/symbols/seta-left.png" alt="botão de seta para a esquerda">
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    
+                        <!--botao setinha direita-->
+                        <button id="seta_right" class="carousel-control-next botao-triangular-pequeno efeito-de-botao-zoom-15" type="button" data-bs-target="#carousel_pizzas" data-bs-slide="next">
+                            <img class="pequena-seta" src="../assets/symbols/seta-right.png" alt="botão de seta para a direita">
+                            <span class="visually-hidden">Next</span>                            
+                        </button>
+                    
+                    
+                        </div>
+                    </div>
+
+                    <div class="col-3 h-100"> <!--quadro informativo com texto-->
+                        <p id="caixa_chamariz" class="Courgette fundo-verde caixa-de-texto-lat"> <!--apargarfo de texto-->
+                            Prove nosso sabor tradicional mais vendido:<br>
+                            Calabresa!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="foot fundo-vermelho"> <!--rodape-->
+            <i class="texto-pequeno">M & J's Pizzaria &copy; <br> developed by M & J's Dev&reg; <br>ifsp - 2023</i>
+        </footer>
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+        <script src="../js/app.js"></script>
+    </body>
+</html>
+

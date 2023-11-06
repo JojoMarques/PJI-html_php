@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M & J's Pizzaria</title>
+
+        <link rel="shortcut icon" href="../assets/images/logo/pizza_logo_icon.png" type="image/png">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/fontes.css">
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <header class="header-sem-botao fundo-verde"> <!--header da pag-->
+            <a href="../html/index.html" class="img-logo"> <!--fundo branco da imagem-->
+                <img class="logo efeito-de-botao-zoom-05" alt="logo da pizzaria M&J's" src="../assets/images/logo/pizza_logo.png"> <!--imagem-->
+            </a>
+            
+            <p id="titulo-header" class="titulo-func Nickainley"></p> <!--texto do nome da pizzaria-->
+            
+            <div class="line"></div> <!--linha decorativa-->
+        </header>
+        
+        <article class="content h-75"> <!--conteudo-->
+            <div class="row align-content-center h-100 w-100"> <!--como se fosse uma linha onde cada elemento tem sua propria coluna-->
+               <!--barrinha decorativa-->
+                <div class="col-1 align-items-center h-100">
+                    <div class="barrinha-decorativa fundo-verde"></div>
+                </div> 
+
+                <div class="col align-items-start h-100">
+                    <div class="row h-75">
+                        <div class="col-1 col-sm-3 align-items-start h-100">
+                            <section id="pic_container" class="h-75">
+                                <img id="pic_funcionario" alt="foto de um funcionário">
+                            </section>
+                        </div>
+
+                        <div class="col col-sm-9 align-items-start h-100">
+                            <div id="dados_func_container" class="h-25 Courgette">
+                                Funcionário:
+                                <p id="dados_func" class="h-100 p-3 Quicksand"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row h-25 row-de-botoes">
+                        <div class="col-5 h-100 d-flex justify-content-start">
+                            <button id="sair" class="w-25 botao-retangular fundo-amarelo">
+                                <a href="1_login_funcionarios.html" class="h-100 Courgette">sair</a>
+                            </button>
+                        </div>
+                        <div class="col-7 h-100 pb-4 d-flex justify-content-end">
+                                <button id="realizar_pedido" class="h-50 w-auto botao-retangular">
+                                    <a href="3_registro_clientes.html" class="h-100 w-auto Courgette">
+                                        <img src="../assets/symbols/seta-placa-botao-escurecido.png" class="botao-seta-mais-escuro">
+                                        <img src="../assets/symbols/seta-placa-botao.png" class="botao-seta" alt="botao seta: realizar pedido">
+                                        <p id="texto_botao_pedido">realizar pedido</p>
+                                    </a>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </article>
+
+        <footer class="foot fundo-verde"> <!--rodape-->
+            <i class="texto-pequeno">M & J's Pizzaria &copy; <br> developed by M & J's Dev&reg; <br>ifsp - 2023</i>
+        </footer>
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+        <script src="../js/app3.js"></script>
+    </body>
+</html>
