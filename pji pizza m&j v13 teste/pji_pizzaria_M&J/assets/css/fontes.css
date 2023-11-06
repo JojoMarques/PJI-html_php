@@ -1,0 +1,48 @@
+/* fontes */
+
+@font-face {
+   font-family: "Nickainley";
+   src: url("../font/nickainley/Nickainley-Normal.otf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/quicksand/Quicksand-Bold.ttf");
+    src: url("../font/quicksand/Quicksand-Light.ttf");
+    src: url("../font/quicksand/Quicksand-Medium.ttf");
+    src: url("../font/quicksand/Quicksand-Regular.ttf");
+    src: url("../font/quicksand/Quicksand-SemiBold.ttf");
+    src: url("../font/quicksand/Quicksand-VariableFont_wght.ttf");
+ }
+
+ @font-face {
+    font-family: "PlaylistFF";
+    src: url("../font/playlistff/Playlist\ Caps.otf");
+    src: url("../font/playlistff/Playlist\ Ornament.otf");
+    src: url("../font/playlistff/Playlist\ Script.otf");
+ }
+
+ @font-face {
+    font-family: "Courgette";
+    src: url("../font/courgette/Courgette-Regular.ttf");
+ }
+
+.Nickainley{
+   font-family: 'Nickainley';
+   font-size: 24px;
+}
+
+.Quicksand{
+    font-family: 'Quicksand';
+    font-size: 24px;
+ }
+
+.PlaylistFF {
+    font-family: 'PlaylistFF';
+    font-size: 24px;
+ }
+
+.Courgette {
+    font-family: 'Courgette';
+    font-size: 28px;
+ }

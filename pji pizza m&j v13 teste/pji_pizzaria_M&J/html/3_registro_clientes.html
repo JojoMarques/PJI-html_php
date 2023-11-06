@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M & J's Pizzaria</title>
+
+        <link rel="shortcut icon" href="../assets/images/logo/pizza_logo_icon.png" type="image/png">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/fontes.css">
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../assets/css/popup.css">
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+
+    <body class="altura-110">
+        <header class="header-sem-botao fundo-bege"> <!--header da pag-->
+            <a href="../html/index.html" class="img-logo"> <!--fundo branco da imagem-->
+                <img class="logo efeito-de-botao-zoom-05" alt="logo da pizzaria M&J's" src="../assets/images/logo/pizza_logo.png"> <!--imagem-->
+            </a>
+            
+            <p id="titulo-header" class="Nickainley">Registro de clientes:</p> <!--texto do nome da pizzaria-->
+            
+            <div class="line"></div> <!--linha decorativa-->
+        </header>
+        
+        <article class="content h-100"> <!--conteudo-->
+            <div class="row align-content-center w-100 h-100"> <!--como se fosse uma linha onde cada elemento tem sua propria coluna-->
+               <!--barrinha decorativa-->
+                <div class="col-1 align-items-center h-100" style="width: 6%;">
+                    <div class="barrinha-decorativa fundo-bege"></div>
+                </div> 
+                
+                <div class="col-11 h-100 d-flex justify-content-start">
+
+                    <!--INÍCIO DO FORMULÁRIO-->
+                    <!--no action, tem que adiconar o link que referencia o php no localhost-->
+                    <form id="formRegCli" action ="http://localhost/pji%20pizza%20m&j%20v13/pji_pizzaria_M&J/php/2_registroClientes.php" method = "POST" class="input-usu-contain h-100 align-content-center justify-content-start" style="width: 94%;">
+
+                        <!--input CPF com botão verificar -->
+                        <div class="row input-dado-usu justify-content-center">
+                            <label for="cpf_usu" class="col-2 label-2 Courgette ">CPF: </label>
+                            <input id="input_cpf_usu" class="col-5 mr-5 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="cpf_usu" maxlength="11" placeholder="digite o CPF">
+
+                            <div class="col-2 h-100 mx-4">
+                                <!--botao submit só cpf-->
+                                <button type="button" id="verificarCPF" class="botao-DecoCheck fundo-verde h-75 Courgette efeito-de-botao-zoom-05" style="width: 82%; border: #7C875C 9px solid;">
+                                    Verificar
+                                </button>
+
+                                <!--botao invisivel de abrir pop up-->
+                                <a href="#popUp" id="openPopUp" class="d-none"></a>
+                            </div>
+                                
+                            <!--texto para avisar se estiver vazio-->
+                            <div class="col-4 texto-aviso justify-content-start" id="cpf-texto-aviso-contain">
+                                <p class="texto-aviso-p" id="cpf-texto-aviso">Vazio!! Insira um CPF!</p>
+                            </div>
+                        </div>
+
+                        <div class="row" style="height: 2%;"></div>
+                        <!--input-->
+                        <div class="row input-dado-usu ">
+                            <label for="nome_usu" class="col-1 label-2 Courgette" >Nome: </label>
+                            <input id="input_nome_usu" class="col-9 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="nome_usu" maxlength="255" placeholder="digite o nome">
+                            
+                            <!--texto para avisar se estiver vazio-->
+                            <div class="col-3 texto-aviso justify-content-start " id="nome_usu-texto-aviso-contain">
+                                <p class="texto-aviso-p" id="nome-usu-texto-aviso">Vazio!! Insira um nome!</p>
+                            </div>
+                        </div>
+
+                        <!--input-->
+                        <div class="row input-dado-usu" style="height: 30%;">
+                            <label for="endereco_usu" class="col-1 label-2 Courgette">Endereço: </label>
+                            <div class="col-11 h-100">
+                                <div class="row gap-3 mb-2" style="height: 33%;">
+                                    <input id="input_logradouro_usu" class="mx-1 col-6 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="logradouro_usu" maxlength="255" placeholder="digite o logradouro">
+                                    <input id="input_nro_usu" class="mx-1 col-2 input-2 fundo-amarelo efeito-de-input-zoom-05" type="number" name="nro_usu" maxlength="4" min="1" placeholder="nº">
+                                    <input id="input_cep_usu" class="mx-1 col-3 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="cep_usu" maxlength="8" placeholder="CEP">
+                                </div>
+                                <div class="row gap-3 mb-2" style="height: 33%;">
+                                    <input id="input_bairro_usu" class="mx-1 col-4 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="bairro_usu" maxlength="255" placeholder="bairro">
+                                    <input id="input_cidade_usu" class="mx-1 col-4 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="cidade_usu" maxlength="255" placeholder="cidade">
+                                    <input id="input_estado_usu" class="mx-1 col-3 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="estado_usu" maxlength="255" placeholder="estado">
+                                </div>
+                                <div class="row gap-3" style="height: 33%;">
+                                    <input id="input_complemento_usu" class="mx-1 col-11 input-2 fundo-amarelo efeito-de-input-zoom-05" type="text" name="complemento_usu" maxlength="255" placeholder="complemento">
+                                </div>
+                            </div>
+                            <!--texto para avisar se estiver vazio-->
+                            <div class="col-3 justify-content-start texto-aviso" id="endereco-texto-aviso-contain">
+                                <p class="texto-aviso-p" id="endereco-texto-aviso">Inválido!! Preencha todos os dados!</p>
+                            </div>
+                        </div>
+
+                        <!--input-->
+                        <div class="row input-dado-usu">
+                            <label for="telefone_usu" class="col-1 label-2 Courgette">Telefone: </label>
+                            <div class="row h-100 gap-3" style="width: 93%;"> 
+                                <input id="input_ddd_usu" class="col-2 input-2 fundo-amarelo efeito-de-input-zoom-05" type="number" min="1" name="ddd_usu" maxlength="255" placeholder="DDD">
+                                <input id="input_telefone_usu" class="col-6 input-2 fundo-amarelo efeito-de-input-zoom-05" type="number" min="1" name="tel_usu" maxlength="255" placeholder="digite o telefone">
+                            </div>
+                            <!--texto para avisar se estiver vazio-->
+                            <div class="col-3 justify-content-start texto-aviso  " id="telefone-texto-aviso-contain">
+                                <p class="texto-aviso-p" id="telefone-texto-aviso">Vazio!! Insira um Telefone!</p>
+                            </div>
+                        </div>
+                        
+                        <!--botao confirmar-->
+                        <div class="row btn-confirma-contain justify-content-end">
+                            <div class="col h-100 col-2">
+                                <input type="submit" value="Confirmar" id="submitFunc" class="botao-DecoCheck fundo-bege h-75 Courgette efeito-de-botao-zoom-05" style="width: 85%; border: #D4A080 9px solid;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+
+            <!-- POP UP -->
+            <aside id="popUp" class="popup">
+                <div class="popUpContainer">
+                    <header>
+                        <a href="#!" class="closePopUp Quicksand cor-cinza">X</a>
+                        <h2 class="Quicksand">Usuário já <br> registrado!</h2>
+                    </header>
+                    <article class="content justify-content-center px-5"> 
+                        <!--input CPF com botão verificar-->
+                        <div class="row bg-transparent h-50 input-dado-usu justify-content-start py-5">
+                            <label for="cpf_usu_pop" class="bg-transparent col-2 label-2 Courgette ">CPF: </label>
+                            <input id="input_cpf_usu_pop" readonly class="px-5 col-12 mr-5 input-2 fundo-amarelo" type="text" name="cpf_usu_pop" maxlength="11" placeholder="CPF">
+
+                            <!--texto para avisar se estiver vazio-->
+                            <div class="mt-2 col-6 texto-aviso bg-transparent justify-content-start" id="cpf-pop-texto-aviso-contain">
+                                <p class="bg-transparent texto-aviso-p" id="cpf-pop-texto-aviso">Vazio!! Insira um CPF!</p>
+                            </div>
+                        </div>
+
+                        <div class="row bg-transparent mt-5 h-50 justify-content-center">
+                            <a id="button_login_pop" href="../html/4_cardapio.html" class="col-6 botao-retangular efeito-de-botao-zoom-05 fundo-vermelho Courgette">
+                                Login
+                            </a>
+                        </div>
+
+                    </article>
+                </div>        
+                <a href="#!" class="closePopUpOutSide"></a>    
+            </aside>
+
+        <footer class="foot fundo-verde"> <!--rodape-->
+            <i class="texto-pequeno">M & J's Pizzaria &copy; <br> developed by M & J's Dev&reg; <br>ifsp - 2023</i>
+        </footer>
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+        <script src="../js/app4.js"></script>
+        
+    </body>
+</html>
