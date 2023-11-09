@@ -1,0 +1,24 @@
+
+
+scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+scroll-container {
+  display: block;
+  max-width: 1000px !important;
+  max-height: 427.5px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+scroll-page {
+  display: block;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 95% !important;
+  padding: 15px 0px 15px 20px;
+}

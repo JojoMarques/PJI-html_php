@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M & J's Pizzaria</title>
+
+        <link rel="shortcut icon" href="../assets/images/logo/pizza_logo_icon.png" type="image/png">
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/fontes.css">
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+
+    <body class="altura-175">
+        <header class="header-sem-botao fundo-vermelho content"> <!--header da pag-->
+            <a href="../html/index.html" class="col-2 img-logo"> <!--fundo branco da imagem-->
+                <img class="logo efeito-de-botao-zoom-05" alt="logo da pizzaria M&J's" src="../assets/images/logo/pizza_logo.png"> <!--imagem-->
+            </a>
+            
+            <p id="titulo-header" class="col-3 Nickainley">Cardápio:</p> <!--texto do nome da pizzaria-->
+            
+            <div class="line"></div> <!--linha decorativa-->
+        </header>
+        
+        <article class="content h-100"> <!--conteudo-->
+            <div class="row align-content-center h-100 w-100"> <!--como se fosse uma linha onde cada elemento tem sua propria coluna-->
+               <!--barrinha decorativa-->
+                <div class="col-1 align-items-center h-100">
+                    <div class="barrinha-decorativa fundo-vermelho"></div>
+                </div> 
+                <!--input-->
+                <form id="formCard" action="http://localhost/pji%20pizza%20m&j%20v13/pji_pizzaria_M&J/php/4_registroPedido.php" method="POST" class="col-11 h-100">
+                    <div class="row h-100">
+                        <div class="col-6 h-auto">
+                            <p class="row h-auto pt-5 Courgette">Pizzas:</p>
+
+                            <div class="h-auto">
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_1">
+                                            <label id="lbl_1" class="label mt-2 Quicksand col-10" for="check_1">Mussarela: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_1" class="Quicksand h-auto">R$34,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_1" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_1" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-mussarela" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_1" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_2">
+                                            <label id="lbl_2" class="label mt-2 Quicksand col-10" for="check_2">Calabresa: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_2" class="Quicksand h-auto">R$34,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_2" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_2" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-calabresa" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_2" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_3">
+                                            <label id="lbl_3" class="label mt-2 Quicksand col-10" for="check_3">Frango com catupiry: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_3" class="Quicksand h-auto">R$39,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_3" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_3" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-frango-catupiry" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_3" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_4">
+                                            <label id="lbl_4" class="label mt-2 Quicksand col-10" for="check_4">Dois queijos: </label>
+                                        </div>  
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_4" class="Quicksand h-auto">R$37,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_4" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_4" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-dois-queijos" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_4" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_5">
+                                            <label id="lbl_5" class="label mt-2 Quicksand col-10" for="check_5">Três queijos: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_5" class="Quicksand h-auto">R$38,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_5" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_5" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-três-queijos" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_5" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_6">
+                                            <label id="lbl_6" class="label mt-2 Quicksand col-10" for="check_6">Quatro queijos: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_6" class="Quicksand h-auto">R$39,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_6" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_6" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-quatro-queijos" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_6" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_7">
+                                            <label id="lbl_7" class="label mt-2 Quicksand col-10" for="check_7">Bacon: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_7" class="Quicksand h-auto">R$39,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_7" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_7" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-bacon" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_7" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_8">
+                                            <label id="lbl_8" class="label mt-2 Quicksand col-10" for="check_8">Portuguesa: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_8" class="Quicksand h-auto">R$42,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_8" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_8" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-portuguesa" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_8" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_9">
+                                            <label id="lbl_9" class="label mt-2 Quicksand col-10" for="check_9">Marguerita: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_9" class="Quicksand h-auto">R$34,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_9" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_9" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-marguerita" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_9" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_10">
+                                            <label id="lbl_10" class="label mt-2 Quicksand col-10" for="check_10">vegetariana - brócolis com queijo: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_10" class="Quicksand h-auto">R$42,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_10" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_10" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-vegetariana-brócolis-queijo" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_10" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_11">
+                                            <label id="lbl_11" class="label mt-2 Quicksand col-10" for="check_11">vegana - cogumelos e frango de soja: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_11" class="Quicksand h-auto">R$44,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_11" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_11" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-vegana-cogumelos-frango-soja" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_11" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_12">
+                                            <label id="lbl_12" class="label mt-2 Quicksand col-10" for="check_12">Doce - nutella com morango: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_12" class="Quicksand h-auto">R$34,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_12" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_12" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="pizza-doce-nutella-morango" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_12" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 h-auto">
+                            <p class="row h-auto pt-5 Courgette">Bebidas:</p>
+
+                            <div class="h-auto pb-5">
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_13">
+                                            <label id="lbl_13" class="label mt-2 Quicksand col-10" for="check_13">Água: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_13" class="Quicksand h-auto">R$6,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_13" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_13" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="bebida-água" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_13" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_14">
+                                            <label id="lbl_14" class="label mt-2 Quicksand col-10" for="check_14">Coca Cola: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_14" class="Quicksand h-auto">R$12,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_14" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_14" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="bebida-coca-cola" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_14" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_15">
+                                            <label id="lbl_15" class="label mt-2 Quicksand col-10" for="check_15">Fanta laranja: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_15" class="Quicksand h-auto">R$9,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_15" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_15" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="bebida-fanta-laranja" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_15" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_16">
+                                            <label id="lbl_16" class="label mt-2 Quicksand col-10" for="check_16">Fanta Uva: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_16" class="Quicksand h-auto">R$9,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_16" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_16" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="bebida-fanta-uva" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_16" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_17">
+                                            <label id="lbl_17" class="label mt-2 Quicksand col-10" for="check_17">Guaraná: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_17" class="Quicksand h-auto">R$9,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_17" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_17" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="bebida-guarana" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_17" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="row h-auto pt-5 Courgette">Sucos naturais:</p>
+
+                            <div class="h-auto">
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_18">
+                                            <label id="lbl_18" class="label mt-2 Quicksand col-10" for="check_18">Laranja: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_18" class="Quicksand h-auto">R$7,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_18" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_18" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="suco-laranja" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_18" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%;" checked type="checkbox" id="check_19">
+                                            <label id="lbl_19" class="label mt-2 Quicksand col-10" for="check_19">Abacaxi: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_19" class="Quicksand h-auto">R$7,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_19" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_19" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="suco-abacaxi" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_19" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row input-card gap-3">
+                                    <!--checkbox e nome da pizza-->
+                                    <div class="col-3 h-auto justify-content-end gap-3">
+                                        <div class="row h-auto">
+                                            <input class="col-1" style="margin-top: 8.5%; padding-left: 1%;" checked type="checkbox" id="check_20">
+                                            <label id="lbl_20" class="label mt-2 Quicksand col-10" for="check_20">Maracujá: </label>
+                                        </div>    
+                                    </div>
+
+                                    <!--preco-->
+                                    <div class="col-1 h-auto preco">
+                                        <p id="preco_20" class="Quicksand h-auto">R$7,99</p>
+                                    </div>
+
+                                    <!--botao menos-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_menos_20" type="button" class="button btn-card btn-red Quicksand fundo-vermelho">-</button>
+                                    </div>
+                                    <!--input de quantidade de pizzas-->
+                                    <input id="inputPizza_20" class="col-3 input-3 fundo-cinza-claro efeito-de-input-zoom-05 text-center" min="0" type="number" name="suco-maracujá" placeholder="-">
+                                    
+                                    <!--botao mais-->
+                                    <div class="col-1 btn-card-contain">
+                                        <button id="btn_mais_20" type="button" class="button btn-card btn-green Quicksand fundo-verde">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="row h-auto justify-content-start">
+                                    <p class="mt-4 col-1 Courgette h-auto" style="width: 13%; height: auto;">&emsp; Total:</p>
+                                    <input id="total" class="pt-5 input-total Quicksand col-4 h-auto" min="0" type="number" name="total" placeholder="0.00" readonly/>
+                                </div>
+                                
+
+                                <!--observacoes-->
+                                <p class="row h-auto pt-2 Courgette" style="margin-left: 0.06%;">Observações:</p>
+
+                                <div id="textarea_obs" class="row h-auto mt-3 mx-5 justify-content-end">
+                                    <textarea class="Quicksand fundo-amarelo-claro textarea-observacoes efeito-de-input-zoom-05 px-4" name="observacoes"></textarea>
+                                </div>
+                            </div>
+
+                            <!--botao confirmar-->
+                            <div class="row justify-content-end posicao-botao-confirmar mt-5  h-auto pt-5">
+                                <input type="submit" value="Confirmar" id="submitCardapio" class="botao-DecoCheck fundo-vermelho h-75 Courgette efeito-de-botao-zoom-05" style="width: 26%; border: #D76D57 9px solid;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </article>
+
+        <footer class="foot fundo-bege"> <!--rodape-->
+            <i class="texto-pequeno">M & J's Pizzaria &copy; <br> developed by M & J's Dev&reg; <br>ifsp - 2023</i>
+        </footer>
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+        <script src="../js/app5.js"></script>
+
+    </body>
+</html>
